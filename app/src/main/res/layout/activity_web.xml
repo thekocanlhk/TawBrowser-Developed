@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:hardwareAccelerated="true"
+    android:orientation="vertical"
+    tools:context="com.thekocanl.tawbrowser.WebActivity">
+
+    <!-- Üst Adres Çubuğu -->
+    <LinearLayout
+        android:id="@+id/toplinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:orientation="horizontal"
+        android:background="@drawable/top_bar_bg">
+
+        <ImageView
+            android:id="@+id/webIcon"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:contentDescription="favicon"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="11dp"
+            android:src="@drawable/internet"
+            android:background="#01000000" />
+
+        <ImageView
+            android:id="@+id/webCertificate"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:visibility="gone"
+            android:contentDescription="Certificate"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="11dp"
+            android:src="@drawable/reliable_certificate"
+            android:background="#01000000" />
+
+        <EditText
+            android:id="@+id/textUrl"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:background="#01000000"
+            android:hint="@string/input_url"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:textColor="#606060"
+            android:textColorHint="#9f9f9f" />
+
+        <ImageView
+            android:id="@+id/textUrlClean"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:contentDescription="clean"
+            android:padding="11dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/texturlclean"
+            android:background="#01000000" />
+
+        <ImageView
+            android:id="@+id/speakGo"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:contentDescription="speakgo"
+            android:padding="11dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/speakgo"
+            android:background="#01000000" />
+
+        <ImageView
+            android:id="@+id/btnStart"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:contentDescription="refresh"
+            android:padding="11dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/refresh"
+            android:background="#01000000" />
+
+    </LinearLayout>
+
+    <!-- Search Url Info Layout -->
+    <LinearLayout
+        android:id="@+id/layoutSearchUrlInfo"
+        android:visibility="gone"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:src="@drawable/urlwebicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/urltitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="Url Title"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:textColor="#1f1f1f"
+                    android:maxLines="1"
+                    android:maxLength="38"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/urlfull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="Url"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:textColor="#0B57D0"
+                    android:maxLines="1"
+                    android:maxLength="48"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="12dp"
+                android:layout_height="40dp"/>
+
+            <ImageView
+                android:src="@drawable/urlshare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp" />
+                
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="40dp"/>
+
+            <ImageView
+                android:src="@drawable/urlcopy"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp" />
+                
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="40dp"/>
+
+            <ImageView
+                android:id="@+id/textUrlEdit"
+                android:src="@drawable/urledit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:contentDescription="edit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Search Layout -->
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingTop="5dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/find_bar"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="38dp">
+            <EditText
+                android:id="@+id/findBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sayfada bul"
+                android:scrollHorizontally="true"
+                android:inputType="text"
+                android:singleLine="true" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/find_prev" />
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/find_next" />
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/find_close_panel" />
+    </LinearLayout>
+
+    <!-- Tarayıcı Kapsayıcı Alanı -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#d1d1d1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipeRefreshLayout">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!-- Web Sayfası İlerleme Çubuğu -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:max="100"
+            android:progress="50" />
+
+        <!-- Home Page -->
+        <FrameLayout
+            android:id="@+id/homePageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <include layout="@xml/homepage" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_gravity="bottom|right|center_vertical|center_horizontal|center"
+            android:id="@+id/floatButton"
+            android:background="@drawable/float_button_bg"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/float_btn_img" />
+
+        <!-- Main Menu -->
+        <FrameLayout
+            android:id="@+id/navsetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:background="#fafafa">
+
+            <include layout="@layout/activity_toolbar" />
+
+        </FrameLayout>
+        <!-- Main Menu End -->
+    </FrameLayout>
+
+    <!-- Alt Gezinme Çubuğu -->
+    <LinearLayout
+        android:id="@+id/sublinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- Geri Düğmesi -->
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/goBack"
+                style="@style/NavIcon"
+                android:contentDescription="@string/nav_left"
+                android:src="@drawable/nav_left" />
+
+        </RelativeLayout>
+
+        <!-- İleri Düğmesi -->
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/goForward"
+                style="@style/NavIcon"
+                android:contentDescription="@string/nav_right"
+                android:src="@drawable/nav_right" />
+
+        </RelativeLayout>
+
+        <!-- Menü -->
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/navSet"
+                style="@style/NavIcon"
+                android:contentDescription="@string/nav_set"
+                android:src="@drawable/nav_set" />
+
+        </RelativeLayout>
+
+        <!-- Pencere Düğmesi -->
+        <RelativeLayout style="@style/NavItem">
+
+
+            <ImageView
+                style="@style/NavIcon"
+                android:contentDescription="@string/nav_page"
+                android:src="@drawable/nav_page" />
+
+            <TextView
+                style="@style/NavIcon"
+                android:gravity="center"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#555"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <!-- Ana Menü Tuşu -->
+        <RelativeLayout style="@style/NavItem">
+
+            <ImageView
+                android:id="@+id/goHome"
+                style="@style/NavIcon"
+                android:contentDescription="@string/nav_home"
+                android:src="@drawable/nav_home" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
