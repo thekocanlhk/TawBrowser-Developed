@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>TawBrowser Anasayfa</title>
+  <link rel="stylesheet" href="file:///android_asset/homepage/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <link rel="icon" href="file:///android_asset/homepage/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="file:///android_asset/homepage/img/favicon.ico" type="image/x-icon" />
+  
+</head>
+
+<body>
+
+<!-- Anasayfa Logo Ve Search Bar -->
+  <center>
+    <form action="https://www.google.com/search" method="get" target="" id="a" class="b">
+    <div class="logo">
+      <img alt="tawbrowser" src="file:///android_asset/homepage/img/logo.png">
+    </div>
+    <div class="bar">
+      <input class="searchbar" type="text" value="Arama yapın..." onfocus="if(this.beenchanged!=true){ this.value = ''}" onblur="if(this.beenchanged!=true) { this.value='Arama yapın...' }" onchange="this.beenchanged = true;" name="q" title="search">
+      <input class="searchgo" type="image" src="file:///android_asset/homepage/img/searchgo.svg" value="submit"alt="submit" name="submit">
+    </div>
+  </center>
+<!-- END -->
+  
+</body>
+
+</html>
