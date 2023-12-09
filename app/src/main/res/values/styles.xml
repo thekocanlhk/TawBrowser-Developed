@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme.  Theme.AppCompat.Light.DarkActionBar -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">?android:colorPrimaryDark</item>
+        <!-- SplashActivity -->
+        <item name="android:windowBackground">@drawable/screen_splash</item>
+        <!-- CustomActivityAnimation -->
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+    
+    <!-- CustomActivityAnimation -->
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <!-- <item name="android:activityOpenEnterAnimation">@anim/fade_in</item> -->
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <!-- <item name="android:activityCloseExitAnimation">@anim/fade_out</item> -->
+    </style>
+
+    <!-- Alt Gezinme Çubuğu Öğesi -->
+    <style name="NavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#fff</item>
+    </style>
+
+    <!-- Alt Gezinme Simgeleri -->
+    <style name="NavIcon">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    
+    <!-- Main Menü -->
+    <style name="MenuItem">
+        <item name="android:layout_width">61dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">61dp</item>
+        <item name="android:background">#fafafa</item>
+    </style>
+
+    <!-- Main Menü -->
+    <style name="MenuIcon">
+        <item name="android:layout_width">21dp</item>
+        <item name="android:layout_height">21dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <!-- ImageSize -->
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+</resources>

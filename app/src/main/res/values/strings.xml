@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">TawBrowser</string>
+
+    <string name="input_url">Arama yapın veya web adresi yazın</string>
+
+    <!-- Ana sayfa Url -->
+    <string name="home_url">file:///android_asset/homepage/index.html</string>
+
+    <!-- Alt gezinme -->
+    <string name="nav_right">İleri</string>
+    <string name="nav_left">Geri</string>
+    <string name="nav_set">Ayarlar</string>
+    <string name="nav_page">Pencere</string>
+    <string name="nav_home">Anasayfa</string>
+
+    <!-- Main Menu -->
+    <string name="menu_download">İndirilenler</string>
+    <string name="menu_history">Geçmiş</string>
+    <string name="menu_savedpage">Kayıtlı sayfalar</string>
+    <string name="menu_addpage">Sayfa ekle</string>
+    <string name="menu_share">Paylaşıma aç</string>
+    <string name="menu_darktheme">Karanlık tema</string>
+    <string name="menu_adblocker">Ad Blocker</string>
+    <string name="menu_findpage">Sayfada bul</string>
+    <string name="menu_desktopsite">Masaüstü site</string>
+    <string name="menu_textsize">Metin boyutu</string>
+    <string name="menu_zoomin">Yakınlaştır</string>
+    <string name="menu_print">Yazdır/PDF</string>
+    <string name="menu_security">Gizlilik</string>
+    <string name="menu_settings">Ayarlar</string>
+    <string name="menu_translation">Çevirmen</string>
+    <string name="menu_otorotate">Oto döndür</string>
+    <string name="menu_fullscreen">Tam ekran</string>
+    <string name="menu_widefullscreen">Geniş ekran</string>
+    <string name="menu_swiperefresh">Yenile kaydır</string>
+    <string name="menu_nojavascript">Js engelle</string>
+    <string name="menu_nopicture">Resim engelle</string>
+    <string name="menu_cleandata">Temizle</string>
+    <string name="menu_safebrowser">Gizli modu aç</string>
+    <string name="menu_exitapp">Uygul... çık</string>
+
+    <!-- Intro -->
+    <string name="next">İleri</string>
+    <string name="skip">Atla</string>
+    <string name="start">Başla</string>
+</resources>

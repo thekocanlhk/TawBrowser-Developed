@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Aşağı Gölge -->
+    <color name="colorPrimary">#ea6022</color>
+    
+    <!-- SplashActivity -->
+    <color name="white">#ffffff</color>
+
+    <!-- Gezinme Çubuğu Rengi -->
+    <color name="colorPrimaryDark">#cccccc</color>
+    <color name="colorAccent">#ea6022</color>
+    
+    <!-- dots active colors -->
+    <color name="dot_active">#000000</color>
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#cccccc</color>
+</resources>
