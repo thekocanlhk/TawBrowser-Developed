@@ -1,0 +1,36 @@
+body{
+  background-color: #ffffff;
+}
+.logo{
+  margin-top:200px;
+  margin-bottom:20px;
+}
+.bar{
+  margin:0 auto;
+  width:390px;
+  border-radius:30px;
+  border:1px solid #909090;
+  background-color: #f3f3f3;
+}
+.bar:hover{
+  box-shadow: 1px 1px 8px 1px #909090;
+}
+.bar:focus-within{
+  box-shadow: 1px 1px 8px 1px #909090;
+  outline:none;
+}
+.searchbar{
+  height:45px;
+  border:none;
+  width:290px;
+  font-size:16px;
+  outline: none;
+  background-color: #f3f3f3;
+  color: #707070;
+}
+.searchgo{
+  height:26px;
+  position:relative;
+  top:6px;
+  left:10px;
+}
