@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homePageLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/backgroundLight">
+
+    <LinearLayout
+        android:id="@+id/homePageLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/homePageSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TawBrowser"
+            android:textColor="#cccccc"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/homePageLayout"
+            android:layout_above="@+id/homePageSearchBar" />
+
+        <LinearLayout 
+            android:id="@+id/homePageSearchBar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/searchbar_style">
+            
+            <ImageView
+                android:id="@+id/btnSearchEngine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_weight="5.0"
+                android:padding="10dp"
+                android:clickable="true"
+                android:src="@drawable/se_google" />
+
+            <TextView
+                android:id="@+id/homePageSearch"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="15.0"
+                android:paddingRight="8dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/searchbar_style" />
+
+            <ImageView
+                android:id="@+id/homePageSpeakGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_weight="5.0"
+                android:padding="10dp"
+                android:clickable="true"
+                android:src="@drawable/searchbar_speakgo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#f6f6f6">
+
+        <!-- ActionBar -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="12dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/backPage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/backpage" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="12dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000001"
+                android:text="Uygulama Hakkında"
+                android:textStyle="bold"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+        <!-- ActionBar End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f6f6f6" />
+
+        <!-- Layout 1 -->
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/radius_bckg">
+
+            <!-- Öge 1 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="390dp"
+                android:layout_height="1dp"
+                android:background="#f6f6f6" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/aboutLogo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/aboutlogo" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Öge 2 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000001"
+                        android:text="TawBrowser"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Öge 3 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="390dp"
+                android:layout_height="1dp"
+                android:background="#f6f6f6" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="Versiyon: null (null)"
+                        android:textStyle="normal"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Öge 4 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="390dp"
+                android:layout_height="1dp"
+                android:background="#f6f6f6" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="230dp"
+                android:layout_height="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="TawBrowser, Android için açık kaynaklı bir tarayıcıdır."
+                        android:textStyle="normal"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Öge 5 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="390dp"
+                android:layout_height="1dp"
+                android:background="#f6f6f6" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="Lisans: null"
+                        android:textStyle="normal"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Öge 6 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="390dp"
+                android:layout_height="1dp"
+                android:background="#f6f6f6" />
+
+            <LinearLayout
+				android:id="@+id/aaLayoutLink"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#33B5E5"
+                        android:text="https://github.com/thekocanlhk/TawBrowser"
+                        android:textStyle="normal"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/link_go" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Öge 6 End -->
+
+            <!-- Öge 7 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:gravity="center">
+
+            </LinearLayout>
+            <!-- Öge 7 End -->
+
+        </LinearLayout>
+        <!-- Layout 1 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#f6f6f6" />
+
+        <!-- Layout 2 -->
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/radius_bckg">
+
+            <!-- Öge 7 -->
+            <LinearLayout
+				android:id="@+id/aaLayout1"
+                android:orientation="horizontal"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="Değişiklik günlüğü"
+                        android:textStyle="normal"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Öge 7 End -->
+
+            <!-- Öge 8 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="390dp"
+                android:layout_height="1dp"
+                android:background="#f6f6f6" />
+
+            <LinearLayout
+				android:id="@+id/aaLayout2"
+                android:orientation="horizontal"
+                android:layout_width="135dp"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="Katkıda bulunanlar"
+                        android:textStyle="normal"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Öge 8 End -->
+
+            <!-- Öge 9 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="390dp"
+                android:layout_height="1dp"
+                android:background="#f6f6f6" />
+
+            <LinearLayout
+				android:id="@+id/aaLayout3"
+                android:orientation="horizontal"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#808080"
+                        android:text="Diğer lisanslar"
+                        android:textStyle="normal"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Öge 9 End -->
+
+        </LinearLayout>
+        <!-- Layout 2 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="390dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</ScrollView>

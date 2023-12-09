@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f6f6f6">
+
+        <!-- ActionBar -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="12dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/backPage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/backpage" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="12dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000001"
+                android:text="Ayarlar"
+                android:textStyle="bold"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+        <!-- ActionBar End -->
+
+        <!-- Other 1 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="top">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Önemli"
+                android:textColor="#ea6022"
+                android:textStyle="normal"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--- Other End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 1 -->
+        <LinearLayout
+            android:id="@+id/hpuLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Anasayfa Url'si"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/hpuTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="https://www.google.com/"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 1 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 2 -->
+        <LinearLayout
+            android:id="@+id/seLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Arama Motoru"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/seTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="Google"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 2 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 3 -->
+        <LinearLayout
+            android:id="@+id/uaLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Kullanıcı Aracısı"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/uaTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="Mobil"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 3 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 4 -->
+        <LinearLayout
+            android:id="@+id/atLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Uygulama Teması"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+						android:id="@+id/atTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="Aydınlık Tema"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 4 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 5 -->
+        <LinearLayout
+            android:id="@+id/alLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Uygulama Dili"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+						android:id="@+id/alTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="Türkçe"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 5 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 6 -->
+        <LinearLayout
+            android:id="@+id/tlLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Çevirmen Dili"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/langLTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="0dp"
+                        android:text="Türkçe"
+                        android:textColor="#707070" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=">"
+                        android:textColor="#000001" />
+
+                    <TextView
+                        android:id="@+id/langRTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="24dp"
+                        android:text="İngilizce"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 6 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 7 -->
+        <LinearLayout
+            android:id="@+id/sttlLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Speech To Text Dili"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+						android:id="@+id/sttlTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="Türkçe"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 7 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 8 -->
+        <LinearLayout
+            android:id="@+id/jbLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/jbTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="JavaScript Engelle (Devredışı)"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:checked="false"
+                        android:background="#000001"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/jbCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="38dp"
+                        android:checked="false"
+                        android:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 8 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 9 -->
+        <LinearLayout
+            android:id="@+id/ibLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/ibTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Resim Engelle (Devredışı)"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:checked="false"
+                        android:background="#000001"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/ibCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="38dp"
+                        android:checked="false"
+                        android:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+        <!-- Öge 9 End -->
+
+        <!-- Other 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="top">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Çerezler"
+                android:textColor="#ea6022"
+                android:textStyle="normal"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--- Other End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 1 -->
+        <LinearLayout
+            android:id="@+id/cbLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/cbTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Çerezleri Engelle (Devredışı)"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:checked="false"
+                        android:background="#000001"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/cbCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="38dp"
+                        android:checked="false"
+                        android:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 1 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 2 -->
+        <LinearLayout
+            android:id="@+id/ccacLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Çerezleri Ve Önbelleği Temizle"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/ccacTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:text="12 MB / 23 MB"
+                        android:textColor="#707070" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Öge 2 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 3 -->
+        <LinearLayout
+            android:id="@+id/xLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+        <!-- Öge 3 End -->
+
+        <!-- Other 3 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="top">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Diğer"
+                android:textColor="#ea6022"
+                android:textStyle="normal"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!--- Other End -->
+			
+		<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 1 -->
+        <LinearLayout
+            android:id="@+id/aaLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Uygulama Hakkında"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <!-- Öge 1 End -->
+			
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 2 -->
+        <LinearLayout
+            android:id="@+id/ppLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Gizlilik Politikası"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <!-- Öge 2 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 3 -->
+        <LinearLayout
+            android:id="@+id/ddoLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Bağış Yap"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <!-- Öge 3 End -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <!-- Öge 4 -->
+        <LinearLayout
+            android:id="@+id/sfLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:background="@drawable/radius_bckg">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Geri Bildirim Gönder"
+                android:textColor="#000001"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f6f6f6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f6f6f6" />
+        <!-- Öge 4 End -->
+
+    </LinearLayout>
+
+</ScrollView>
